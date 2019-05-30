@@ -1,0 +1,304 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "helpers/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import 'reset';
+@import 'helpers/mixin';
+
+$sweetlight:#EAF0ED;
+
+/*layout*/
+body{
+    height:100vh;
+    font-family: '微軟正黑體','Gill Sans', 'Gill Sans MT';
+}
+.font-md-size{
+    font-size: 16px;
+}
+.font-small{
+    font-size: 0.75rem;
+}
+.font-big{
+    font-size: 1.25rem;
+}
+.logo{
+    display: block;
+    width: 220px;
+    height: 40px;
+    background-image: url(../images/logo-all-dark.svg);
+    background-size: cover;
+    background-position: center center;
+}
+.bg-cover{
+    background-size: cover;
+    background-position: center center;
+}
+.banner{
+    height: 300px;
+}
+@include frostedGlass();
+
+.main-link{
+    .frosted-wrap{
+        writing-mode: vertical-lr;
+        font-size: 28px;
+        letter-spacing: 0.3em;
+    }
+}
+@media(min-width:768px){
+    .banner{
+        height: 500px;
+    }
+    .main-link{
+        position: relative;
+        top:-100px;
+    }
+}
+.replace-slogan{
+    font-size: 32px;
+    color: #3F5D45;
+    font-weight: bold;
+}
+
+.content{
+    position: relative;
+    .side-picture{
+        width: 100%;
+        height: 300px;
+    }
+    .poem{
+        writing-mode: vertical-rl;
+        line-height: 2.5em;
+        word-spacing: 1em;
+        height: 300px;
+    }
+    .slogan{
+        position: absolute;
+        top: 10px;
+        right:40px;
+        width: 100px;
+        height: 300px;
+        background: url('../images/lg-whyisdesert.svg') no-repeat;
+    }    
+    .slogan-reverse{
+        background-image: url('../images/lg-為什麼一定要吃甜點.svg');
+        background-repeat: no-repeat;
+    }
+}
+@media(min-width:768px){
+    .content{
+        .side-picture{
+            position: absolute;
+            left: 0;
+            top:0;
+            bottom:0;
+            height: auto;
+        } 
+        .text-md-sweet{
+            color: #3F5D45 !important;
+        }
+        .slogan{
+            top:-40px;
+        }
+        .side-reverse{
+            left: unset;
+            right: 0;
+        }
+    }
+   
+}
+
+.slogan-pic{
+    width: 100px;
+    height: 300px;
+    background: url(../images/lg-想吃甜點是不需要理由的.svg) no-repeat;
+}
+
+.card-img{
+    position: relative;
+    width: 100%;
+    height: 315px;
+    .marker{
+        position: absolute;
+        top:0;
+        left: 20px;
+        writing-mode: vertical-lr;
+        letter-spacing: 0.4em;
+    }
+    .heart{
+        position: absolute;
+        right:10px;
+    }
+}
+
+.input-group-foot{
+    position: relative;
+    .inputPreicon{
+        position: absolute;
+        top:1px;
+        bottom: 1px;
+        left: 0;
+        z-index: 1100;
+    }
+    .input-foot{
+        height: 50px;
+    }
+}
+.footbtn{
+    background-color: #FFE180;
+}
+
+/* product.html*/
+.table-control{
+    .list-group-item{
+        font-size: 18px;
+        padding: 1rem 1.25rem;
+    }
+}
+
+/*login*/
+.login-title{
+    font-size: 36px;
+    font-weight: bold;
+}
+.submit-btn{
+    font-size: 24px;
+    font-weight: bold;
+}
+.title-decoration{
+    &::before,&::after{
+        content: '——';
+        margin: 0 20px;
+    }
+}
+.social-media{
+    margin: 0 auto;
+    width: 80%;
+    li{
+        height: 56px;
+    }
+    &.login-option{
+        .trademark{
+            padding: 0.75rem 2.5rem; 
+        }
+    }
+    .trademark{
+        padding: 0.75rem 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    #fb{
+        padding: 0.65rem 0;
+        background-image: url('../images/ic-facebook-logotype.svg');
+    }
+    #google{
+        background-image: url('../images/ic-google.svg');
+    }
+    #yahoo{
+        background-image: url('../images/ic-yahoo.svg');
+    }
+}
+
+/*cart*/
+.cart-list{
+    border:none;
+}
+.cart-table{
+    .total-price {
+        width: 100%;
+        border-top: 1px solid $sweetlight;
+        border-bottom: 1px solid $sweetlight;
+    }
+    .cart-pic{
+        width: 50%;
+        height: 110px;
+    }
+    .cart-title{
+        line-height: 1.3em;
+    }
+    .number-control{
+        width: 100%;
+    }
+
+}
+
+@media(min-width:768px){
+    .cart-list{
+        border-bottom:1px solid $sweetlight;
+    }
+    .cart-table{
+        .number-control{
+            width: auto;
+        }
+        .cart-pic{
+            width: 110px;
+        }
+        .total-price{
+            width: 25%;
+            border: 0;
+        }
+    }
+
+}
+
+/*checkout-1*/
+.current-process{
+    width: 150px;
+    position: relative;
+    .circle{
+        position: relative;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        z-index: 4;
+        &::before{
+          content: '';
+          position: absolute;
+          top: 2px;
+          bottom: 2px;
+          left: 2px;
+          right: 2px;
+          border-radius: 50%;
+        }
+    }
+    .circle-now{
+        &::before{
+            background-color: #fff;
+        }
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        left: 15px;
+        right: 15px;
+        height: 0.5px;
+        background-color: #fff;
+        top: 50%;
+        z-index: 2;
+    }
+}
+
+/*checkout-3*/
+.receipt{
+    a{
+        color: #fff;
+        &:hover{
+            color: #fff;
+            background-color: grey;
+        }
+    }
+    .active{
+        color: #3F5D45;
+        background: $sweetlight;
+    }
+}
+
+#pay-success{
+    width: 200px;
+    &::after{
+        background-color: #3F5D45;
+    }
+}

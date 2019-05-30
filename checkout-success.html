@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <div class="container header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <h1 class="navbar-brand m-0" href="#"><a class="text-hide logo" href="#">Sweetaste</a></h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-4">
+              <a class="nav-link text-sweet font-weight-bold" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link text-sweet font-weight-bold" href="product.html">甜點</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link text-sweet font-weight-bold" href="login.html">登入</a>
+            </li>
+            <li class="nav-item ml-4">
+              <a href="#" class="nav-link text-sweet font-weight-bold"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="banner jumbotron jumbotron-fluid bg-cover d-flex" style="height: 450px; background-image:url('https://bit.ly/2P7GhNd')">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <div class="current-process d-flex mx-auto py-5 justify-content-between align-items-center text-sweet" id="pay-success">
+                        <div style="z-index: 3;"><i class="fas fa-check-circle d-block" style="font-size: 20px;"></i></div>
+                        <div class="bg-sweetlight" style="z-index: 3; border-radius: 50%;"><i class="fas fa-check-circle d-block" style="font-size: 20px;"></i></div>
+                        <div style="z-index: 3;"><i class="fas fa-check-circle d-block" style="font-size: 20px;"></i></div>
+                    </div>
+                    <div class="h3 bg-cover mx-auto py-3" style="width: 200px;height: 48px; background-image: url('images/lg-付款成功.svg'); background-repeat: no-repeat;"></div>
+                    <a href="product.html" class="btn btn-warninglight btn-block text-sweet font-big font-weight-bold py-3 mx-auto mt-5" style="width: 350px">繼續逛逛</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+        <div class="mailus py-4 bg-sweet">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-6 d-flex align-items-center">
+                  <h3 class="text-white d-flex align-items-center m-0"><img src="images/logo-light.svg" width="50" height="48"><span class="ml-2">訂閱你我的甜蜜郵件</span></h3>
+              </div>
+              <div class="col-md-4">
+                <div class="input-group input-group-foot mt-1">
+                  <div class="input-group-prepend inputPreicon">
+                    <div class="input-group-text bg-white rounded-0 border-0">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control input-foot py-2 pl-5" height="50">
+                  <div class="input-group-append">
+                    <span class="input-group-text rounded-0 footbtn" id="basic-addon2"><i class="fas fa-arrow-right"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="information py-4 bg-sweetlight">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-5 my-3">
+                <div class="container h-100 d-flex flex-column justify-content-between">
+                    <div class="footLogo mb-3">
+                      <img src="images/logotype-lg-dark.svg" width="200" height="50">
+                    </div>
+                    <h4 class="text-sweet font-md-size my-3" style="line-height: 1.5em">
+                      <p>07-1234-5678</p>
+                      <p>sweetaste@email.com</p>
+                      <p>800 高雄市新興區幸福路 520號</p>
+                    </h4>
+                    <div class="footIcon d-flex">
+                      <img src="images/ic-line@.svg" width="30" height="30">
+                      <img class="ml-3" src="images/ic-facebook.svg" width="30" height="30">
+                    </div>
+                </div>              
+              </div>
+              <div class="col-md-5 mt-md-0">
+                <div class="footSlogan text-right mb-2 d-none d-md-block">
+                  <img width="55" height="240" src="images/sm-今天是個吃甜點的好日子.svg">
+                </div>
+                <h4 class="text-sweet text-left text-md-right font-md-size">© 2018 Sweetaste* All Rights Reserved</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+  crossorigin="anonymous"></script>
+</body>
+</html>
