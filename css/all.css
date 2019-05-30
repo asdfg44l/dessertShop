@@ -11222,54 +11222,10 @@ a.text-warninglight:hover, a.text-warninglight:focus {
   }
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after {
-  content: '';
-  content: none;
-}
-
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 /*對毛玻璃的父元素使用 frosted_wrap
   並對毛玻璃本身使用 frosted
 */
+/*layout*/
 body {
   height: 100vh;
   font-family: '微軟正黑體','Gill Sans', 'Gill Sans MT';
@@ -11375,12 +11331,9 @@ body {
 }
 
 .content .poem {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  color: #8DA291;
   line-height: 2.5em;
   word-spacing: 1em;
-  height: 300px;
 }
 
 .content .slogan {
@@ -11404,6 +11357,12 @@ body {
     top: 0;
     bottom: 0;
     height: auto;
+  }
+  .content .poem {
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    height: 300px;
   }
   .content .text-md-sweet {
     color: #3F5D45 !important;
@@ -11470,6 +11429,20 @@ body {
   padding: 1rem 1.25rem;
 }
 
+.pagination .page-item.active .page-link {
+  color: #fff;
+  background-color: #3F5D45;
+  border-color: #3F5D45;
+}
+
+.pagination .page-link {
+  color: #3F5D45;
+}
+
+.pagination .page-link:hover {
+  background-color: #EAF0ED;
+}
+
 /*login*/
 .login-title {
   font-size: 36px;
@@ -11531,7 +11504,7 @@ body {
 
 .cart-table .cart-pic {
   width: 50%;
-  height: 110px;
+  height: 150px;
 }
 
 .cart-table .cart-title {
@@ -11550,7 +11523,7 @@ body {
     width: auto;
   }
   .cart-table .cart-pic {
-    width: 110px;
+    width: 150px;
   }
   .cart-table .total-price {
     width: 25%;

@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
         <h1 class="navbar-brand m-0" href="#"><a class="text-hide logo" href="#">Sweetaste</a></h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,31 @@
               <a class="nav-link text-sweet font-weight-bold" href="login.html">登入</a>
             </li>
             <li class="nav-item ml-4">
-              <a href="cart.html" class="nav-link text-sweet font-weight-bold"><i class="fas fa-shopping-cart"></i></a>
+              <div class="btn-group">
+                  <button class="btn nav-link text-sweet font-weight-bold rounded-0" data-toggle="dropdown"><i class="fas fa-shopping-cart"></i></button>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <table class="table" style="min-width: 300px">
+                      <tr>
+                        <td><img src="https://bit.ly/2R5tqwD" width="60" height="60"></td>
+                        <td class="align-middle">焦糖馬卡龍</td>
+                        <td class="align-middle">NT$ 900</td>
+                      </tr>
+                      <tr>
+                        <td><img src="https://bit.ly/2R5tqwD" width="60" height="60"></td>
+                        <td class="align-middle">焦糖馬卡龍</td>
+                        <td class="align-middle">NT$ 900</td>
+                      </tr>
+                      <tr>
+                        <td><img src="https://bit.ly/2R5tqwD" width="60" height="60"></td>
+                        <td class="align-middle">焦糖馬卡龍</td>
+                        <td class="align-middle">NT$ 900</td>
+                      </tr>
+                    </table>
+                    <div class="px-3">
+                      <a href="cart.html" class="btn btn-outline-sweet btn-block">結帳去</a>
+                    </div> 
+                  </div>
+              </div>  
             </li>
           </ul>
         </div>
@@ -48,32 +72,32 @@
                             <div class="p-2 bg-white d-flex align-items-center"><div class="trademark mx-2 " id="yahoo"></div></div>     
                        </div>
                     </div>
-                    <div class="card-body">
-                        <form class="needs-validation" novalidate id="login">
-                            <div class="form-group my-4">    
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text bg-sweetlight border-right-0"><i class="fas fa-user"></i></span>
-                                    </div>
-                                    <input type="text" class="form-control bg-sweetlight py-4 rounded-0 border-left-0" placeholder="電子信箱/手機密碼" required>
-                                </div>
-                            </div>
-                            <div class="form-group my-4">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text bg-sweetlight border-right-0"><i class="fas fa-key"></i></span>
-                                    </div>
-                                    <input type="password" class="form-control bg-sweetlight py-4 rounded-0 border-left-0" placeholder="請輸入使用者密碼" required>
-                                </div>
-                            </div>
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">記住我</label>
-                            </div>
+                    <div class="card-body p-0">
+                        <form action="checkout-1.html" class="needs-validation" novalidate id="login">
+                            <div class="p-3">
+                              <div class="form-group my-4">    
+                                  <div class="input-group">
+                                      <div class="input-group-prepend">
+                                          <span class="input-group-text bg-sweetlight border-right-0"><i class="fas fa-user"></i></span>
+                                      </div>
+                                      <input type="email" class="form-control bg-sweetlight py-4 rounded-0 border-left-0" placeholder="電子信箱" required>
+                                  </div>
+                              </div>
+                              <div class="form-group my-4">
+                                  <div class="input-group mb-3">
+                                      <div class="input-group-prepend">
+                                          <span class="input-group-text bg-sweetlight border-right-0"><i class="fas fa-key"></i></span>
+                                      </div>
+                                      <input type="password" class="form-control bg-sweetlight py-4 rounded-0 border-left-0" placeholder="請輸入使用者密碼" required>
+                                  </div>
+                              </div>
+                              <div class="form-group form-check">
+                                  <input type="checkbox" class="form-check-input">
+                                  <label class="form-check-label" for="exampleCheck1">記住我</label>
+                              </div>
+                            </div>  
+                            <button id="send" type="submit" class="submit-btn btn btn-warninglight btn-block text-sweet text-center py-3 rounded-0">登入帳號</button>
                         </form>
-                    </div>
-                    <div class="card-footer p-0">
-                      <button id="send" type="button" class="submit-btn btn btn-warning btn-block text-sweet text-center py-3 rounded-0">登入帳號</button>
                     </div>
                 </div>
             </div>
@@ -156,28 +180,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
   integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
   crossorigin="anonymous"></script>
-  
-  <script>
-    (function() {
-      'use strict';
-      window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var form = document.querySelector('.needs-validation');
-        // Loop over them and prevent submission  
-        $('#send').click(function(e){
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }); 
-      }, false);
-    })();
-     
-
-   
-
-  </script>
-
+  <script src="js/all.js"></script>
 </body>
 </html>

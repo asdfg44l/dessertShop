@@ -11,7 +11,7 @@
   </head>  
   <body>
     <div class="container header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
         <h1 class="navbar-brand m-0" href="#"><a class="text-hide logo" href="#">Sweetaste</a></h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -28,7 +28,31 @@
               <a class="nav-link text-sweet font-weight-bold" href="login.html">登入</a>
             </li>
             <li class="nav-item ml-4">
-              <a href="cart.html" class="nav-link text-sweet font-weight-bold"><i class="fas fa-shopping-cart"></i></a>
+              <div class="btn-group">
+                <button class="btn nav-link text-sweet font-weight-bold rounded-0" data-toggle="dropdown"><i class="fas fa-shopping-cart"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <table class="table" style="min-width: 300px">
+                    <tr>
+                      <td><img src="https://bit.ly/2R5tqwD" width="60" height="60"></td>
+                      <td class="align-middle">焦糖馬卡龍</td>
+                      <td class="align-middle">NT$ 900</td>
+                    </tr>
+                    <tr>
+                      <td><img src="https://bit.ly/2R5tqwD" width="60" height="60"></td>
+                      <td class="align-middle">焦糖馬卡龍</td>
+                      <td class="align-middle">NT$ 900</td>
+                    </tr>
+                    <tr>
+                      <td><img src="https://bit.ly/2R5tqwD" width="60" height="60"></td>
+                      <td class="align-middle">焦糖馬卡龍</td>
+                      <td class="align-middle">NT$ 900</td>
+                    </tr>
+                  </table>
+                  <div class="px-3">
+                    <a href="cart.html" class="btn btn-outline-sweet btn-block">結帳去</a>
+                  </div> 
+                </div>
+              </div>  
             </li>
           </ul>
         </div>
@@ -58,21 +82,24 @@
           </a>
         </div>
       </div>
+      <div class="h3 mt-5 my-4 replace-slogan d-sm-none text-center" style="line-height: 1.4em">為什麼<span class="font-weight-normal"> ——— </span><br>選擇了做甜點</div>
     </div>
-    <div class="h3 my-3 replace-slogan d-sm-none text-center" style="line-height: 1.4em">為什麼<span class="font-weight-normal"> ——— </span><br>選擇了做甜點</div>
+    
     
     <div class="main-content">
-        <section class="content container-fluid my-4 py-4 px-0">
+        <section class="content container-fluid mb-md-5 py-4">
             <div class="row">
-              <div class="side-picture bg-cover col-md-5 ml-md-5" style="background-image: url('https://bit.ly/2xPn7Eq')"></div>
+              <div class="side-picture col-md-5 ml-md-5">
+                <div class="bg-cover w-100 h-100" style="background-image: url(https://bit.ly/2xPn7Eq)"></div>
+              </div>
             </div>    
             <div class="container-fluid py-3" style="background-color: #EAF0ED">
               <div class="row justify-content-end" >
-                <div class="poems col-md-6 py-3 d-flex justify-content-center justify-content-sm-start" style="position: relative">
-                  <p class="poem mx-5 text-black text-md-sweet">
+                <div class="poems col-md-6 py-3 d-md-flex justify-content-center justify-content-sm-start" style="position: relative">
+                  <p class="poem mx-md-5">
                     是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
                   </p>
-                  <p class="poem ml-4 text-black text-md-sweet">
+                  <p class="poem ml-md-4">
                     青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
                   </p>
                   <div class="slogan d-none d-sm-block"></div> 
@@ -81,18 +108,20 @@
             </div>
         </section>
           
-        <div class="h3 mt-5 mb-3 replace-slogan d-sm-none text-center" style="line-height: 1.4em">為什麼<span class="font-weight-normal"> ——— </span><br>一定要吃甜點</div>
-        <section class="content container-fluid my-5 py-4 px-0">
+        <div class="h3 my-3 replace-slogan d-sm-none text-center" style="line-height: 1.4em">為什麼<span class="font-weight-normal"> ——— </span><br>一定要吃甜點</div>
+        <section class="content container-fluid py-4">
             <div class="row">
-              <div class="side-picture side-reverse bg-cover col-md-5 mr-md-5" style="background-image: url('https://bit.ly/2zzAQS4')"></div>
+              <div class="side-picture side-reverse bg-cover col-12 col-md-5 mr-md-5">
+                <div class="bg-cover w-100 h-100" style="background-image: url(https://bit.ly/2zzAQS4)"></div>
+              </div>
             </div>    
             <div class="container-fluid py-3" style="background-color: #EAF0ED">
               <div class="row justify-content-start" >
-                  <div class="bg-sweetlight col-md-6 py-3 d-flex justify-content-center justify-content-sm-start" style="position: relative">
-                    <p class="poem mx-5 text-black text-md-sweet">
+                  <div class="bg-sweetlight col-md-6 py-3 d-md-flex justify-content-center justify-content-sm-start" style="position: relative">
+                    <p class="poem mx-md-5">
                       是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
                     </p>
-                    <p class="poem ml-4 text-black text-md-sweet">
+                    <p class="poem ml-md-4">
                       青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
                     </p>
                     <div class="slogan slogan-reverse d-none d-sm-block"></div> 
@@ -110,7 +139,7 @@
         <section class="product container mb-3">
           <div class="container">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 d-none d-md-block">
                 <div class="card mb-3">
                   <div class="card-img-top bg-cover card-img" style="background-image: url('https://bit.ly/2zL5jN7')">
                       <div class="marker p-2 bg-sweet text-white">本日精選</div>
@@ -126,7 +155,7 @@
                     <button type="button" class="btn btn-block text-sweet font-weight-bold border-0 bg-sweetlight py-3" style="font-size: 20px">加入購物車</div>
                   </div> 
               </div>
-              <div class="col-md-4 mt-3 mt-md-0">
+              <div class="col-md-4 mt-3 mt-md-0 d-none d-md-block">
                 <div class="card mb-3">
                   <div class="card-img-top bg-cover card-img" style="background-image: url('https://bit.ly/2zBDAxX')">
                       <div class="marker p-2 bg-sweet text-white">本日精選</div>

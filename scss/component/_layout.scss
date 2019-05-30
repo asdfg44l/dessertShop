@@ -1,0 +1,147 @@
+$sweet:#3F5D45;
+$sweetlight:#EAF0ED;
+$lightsweet:#8DA291;
+
+/*layout*/
+body{
+    height:100vh;
+    font-family: '微軟正黑體','Gill Sans', 'Gill Sans MT';
+}
+.font-md-size{
+    font-size: 16px;
+}
+.font-small{
+    font-size: 0.75rem;
+}
+.font-big{
+    font-size: 1.25rem;
+}
+.logo{
+    display: block;
+    width: 220px;
+    height: 40px;
+    background-image: url(../images/logo-all-dark.svg);
+    background-size: cover;
+    background-position: center center;
+}
+.bg-cover{
+    background-size: cover;
+    background-position: center center;
+}
+.banner{
+    height: 300px;
+}
+@include frostedGlass();
+
+.main-link{
+    .frosted-wrap{
+        writing-mode: vertical-lr;
+        font-size: 28px;
+        letter-spacing: 0.3em;
+    }
+}
+@media(min-width:768px){
+    .banner{
+        height: 500px;
+    }
+    .main-link{
+        position: relative;
+        top:-100px;
+    }
+}
+.replace-slogan{
+    font-size: 32px;
+    color: #3F5D45;
+    font-weight: bold;
+}
+
+.content{
+    position: relative;
+    .side-picture{
+        width: 100%;
+        height: 300px;
+    }
+    .poem{
+        color:$lightsweet;
+        line-height: 2.5em;
+        word-spacing: 1em;
+    }
+    .slogan{
+        position: absolute;
+        top: 10px;
+        right:40px;
+        width: 100px;
+        height: 300px;
+        background: url('../images/lg-whyisdesert.svg') no-repeat;
+    }    
+    .slogan-reverse{
+        background-image: url('../images/lg-為什麼一定要吃甜點.svg');
+        background-repeat: no-repeat;
+    }
+}
+@media(min-width:768px){
+    .content{
+        .side-picture{
+            position: absolute;
+            left: 0;
+            top:0;
+            bottom:0;
+            height: auto;
+        } 
+        .poem{
+            writing-mode: vertical-rl;
+            height: 300px;
+        }
+        .text-md-sweet{
+            color: #3F5D45 !important;
+        }
+        .slogan{
+            top:-40px;
+        }
+        .side-reverse{
+            left: unset;
+            right: 0;
+        }
+    }
+   
+}
+
+.slogan-pic{
+    width: 100px;
+    height: 300px;
+    background: url(../images/lg-想吃甜點是不需要理由的.svg) no-repeat;
+}
+
+.card-img{
+    position: relative;
+    width: 100%;
+    height: 315px;
+    .marker{
+        position: absolute;
+        top:0;
+        left: 20px;
+        writing-mode: vertical-lr;
+        letter-spacing: 0.4em;
+    }
+    .heart{
+        position: absolute;
+        right:10px;
+    }
+}
+
+.input-group-foot{
+    position: relative;
+    .inputPreicon{
+        position: absolute;
+        top:1px;
+        bottom: 1px;
+        left: 0;
+        z-index: 1100;
+    }
+    .input-foot{
+        height: 50px;
+    }
+}
+.footbtn{
+    background-color: #FFE180;
+}

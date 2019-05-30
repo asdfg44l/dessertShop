@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
         <h1 class="navbar-brand m-0" href="#"><a class="text-hide logo" href="#">Sweetaste</a></h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,31 @@
               <a class="nav-link text-sweet font-weight-bold" href="login.html">登入</a>
             </li>
             <li class="nav-item ml-4">
-              <a href="cart.html" class="nav-link text-sweet font-weight-bold"><i class="fas fa-shopping-cart"></i></a>
+                <div class="btn-group">
+                        <button class="btn nav-link text-sweet font-weight-bold rounded-0" data-toggle="dropdown"><i class="fas fa-shopping-cart"></i></button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <table class="table" style="min-width: 300px">
+                            <tr>
+                                <td><img src="https://bit.ly/2R5tqwD" width="60" height="60"></td>
+                                <td class="align-middle">焦糖馬卡龍</td>
+                                <td class="align-middle">NT$ 900</td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://bit.ly/2R5tqwD" width="60" height="60"></td>
+                                <td class="align-middle">焦糖馬卡龍</td>
+                                <td class="align-middle">NT$ 900</td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://bit.ly/2R5tqwD" width="60" height="60"></td>
+                                <td class="align-middle">焦糖馬卡龍</td>
+                                <td class="align-middle">NT$ 900</td>
+                            </tr>
+                            </table>
+                            <div class="px-3">
+                            <a href="cart.html" class="btn btn-outline-sweet btn-block">結帳去</a>
+                            </div> 
+                        </div>
+                </div>  
             </li>
           </ul>
         </div>
@@ -38,96 +62,104 @@
         <div class="row justify-content-center my-3">
             <div class="col-lg-5">
                 <div class="card bg-sweet text-white border-0 rounded-0">
-                    <div class="card-body">
-                        <h3 class="login-title py-3 text-center">
-                            <div class="form-row justify-content-center align-items-center">
-                                <div class="col-5">
-                                    <div class="h3 text-left">運送</div>
-                                </div>
-                                <div class="col-5">
-                                    <div class="current-process d-flex ml-auto justify-content-between align-items-center">
-                                        <i class="fas fa-check-circle" style="font-size: 15px;"></i>
-                                        <div class="bg-sweet" style="z-index: 3;"><i class="fas fa-check-circle d-block" style="font-size: 15px;"></i></div>
-                                        <div class="circle circle-now bg-sweet"></div>
+                    <div class="card-body p-0">
+                        <div class="d-flex flex-column justify-content-between">
+                            <h3 class="login-title py-3 text-center">
+                                <div class="form-row justify-content-center align-items-center">
+                                    <div class="col-5">
+                                        <div class="h3 text-left">運送</div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="current-process d-flex ml-auto justify-content-between align-items-center">
+                                            <i class="fas fa-check-circle" style="font-size: 15px;"></i>
+                                            <div class="bg-sweet" style="z-index: 3;"><i class="fas fa-check-circle d-block" style="font-size: 15px;"></i></div>
+                                            <div class="circle circle-now bg-sweet"></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </h3>
-                        <form>
-                            <div class="d-flex receipt mb-4" id="receipt" role="tablist">
-                                <a class="btn btn-block active font-weight-bold border border-sweetlight rounded-0 py-2" data-toggle="list" href="#e-invoice" role="tab" aria-controls="e-invoice">電子發票</a>
-                                <a class="btn btn-block font-weight-bold border border-sweetlight rounded-0 mt-0 py-2" data-toggle="list" href="#mail-invoice" role="tab" aria-controls="mail-invoice">郵寄發票</a>
-                            </div>
-                            <div class="tab-content">
-                                <div class="tab-pane show active" id="e-invoice" role="tabpanel">
-                                    <div class="form-row justify-content-center mb-3">
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label class="mb-3 font-big" for="email">電子郵件信箱</label>
-                                                <input class="form-control bg-sweetlight py-4 rounded-0 border-left-0" type="email" id="email" placeholder="example@email.com">
-                                            </div>
-                                        </div>  
-                                    </div>      
-                                    <div class="form-row justify-content-center">
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label class="mb-3 font-big" for="uni-number">統一編號（選填）</label>
-                                                <input class="form-control bg-sweetlight py-4 rounded-0 border-left-0" type="text" id="uni-number" placeholder="12345678">
-                                            </div>
-                                        </div>  
-                                    </div> 
+                            </h3>
+                            <div>
+                                <div class="d-flex receipt mb-4 px-3" id="receipt" role="tablist">
+                                    <a class="btn btn-block active font-weight-bold border border-sweetlight rounded-0 py-2" data-toggle="list" href="#e-invoice" role="tab" aria-controls="e-invoice">電子發票</a>
+                                    <a class="btn btn-block font-weight-bold border border-sweetlight rounded-0 mt-0 py-2" data-toggle="list" href="#mail-invoice" role="tab" aria-controls="mail-invoice">郵寄發票</a>
                                 </div>
-                                <div class="tab-pane" id="mail-invoice" role="tabpanel">
-                                    <div class="form-row justify-content-center mb-4">
-                                        <div class="col-12">
-                                            <div class="d-flex">
-                                                <label class="d-block mb-3 font-big" for="address">地址</label>
-                                                <div class="form-group form-check ml-auto">
-                                                    <input type="checkbox" class="form-check-input" id="Check1">
-                                                    <label class="form-check-label" for="Check1">同運送地址</label>
-                                                </div>
+                                <div class="tab-content">
+                                    <div class="tab-pane show active" id="e-invoice" role="tabpanel">
+                                        <form action="checkout-success.html" class="needs-validation" novalidate>
+                                            <div class="form-row justify-content-center mb-3">
+                                                    <div class="col-10">
+                                                        <div class="form-group">
+                                                            <label class="mb-3 font-big" for="email">電子郵件信箱</label>
+                                                            <input class="form-control bg-sweetlight py-4 rounded-0 border-left-0" type="email" id="email" placeholder="example@email.com" required>
+                                                        </div>
+                                                    </div>  
+                                            </div>      
+                                            <div class="form-row justify-content-center mb-3">
+                                                <div class="col-10">
+                                                    <div class="form-group">
+                                                        <label class="mb-3 font-big" for="uni-number">統一編號（選填）</label>
+                                                        <input class="form-control bg-sweetlight py-4 rounded-0 border-left-0" type="text" id="uni-number" placeholder="12345678">
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                            <button type="submit" class="submit-btn btn btn-warninglight btn-block text-sweet text-center py-3 rounded-0">確認結帳</button> 
+                                        </form>
+                                         
+                                    </div>
+                                    <div class="tab-pane" id="mail-invoice" role="tabpanel">
+                                        <form action="checkout-success.html" class="needs-validation" novalidate>
+                                            <div class="form-row justify-content-center mb-4">
+                                                    <div class="col-10">
+                                                        <div class="d-flex">
+                                                            <label class="d-block mb-3 font-big" for="address">地址</label>
+                                                            <div class="form-group form-check ml-auto">
+                                                                <input type="checkbox" class="form-check-input" id="Check1">
+                                                                <label class="form-check-label" for="Check1">同運送地址</label>
+                                                            </div>
+                                                        </div> 
+                                                        <div class="form-row justify-content-center">
+                                                            <div class="col-6"> 
+                                                                <div class="form-group">
+                                                                    <select class="form-control bg-sweetlight rounded-0 border-left-0" style="height: 50px;" id="city" required>
+                                                                        <option>高雄市</option>
+                                                                        <option>台北市</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="form-group">
+                                                                    <select class="form-control bg-sweetlight rounded-0 border-left-0" style="height: 50px;" id="township" required>
+                                                                        <option>新興區</option>
+                                                                        <option>鳳山區</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-row justify-content-center">
+                                                            <div class="col-12">
+                                                                <input type="text" class="form-control bg-sweetlight py-4 rounded-0 border-left-0" placeholder="幸福路 520 號" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>        
+                                            </div>
+                                            <div class="form-row justify-content-center mb-3">
+                                                <div class="col-10">
+                                                    <div class="form-group">
+                                                        <label class="mb-3 font-big" for="uni-number">統一編號（選填）</label>
+                                                        <input class="form-control bg-sweetlight py-4 rounded-0 border-left-0" type="text" id="uni-number" placeholder="12345678">
+                                                    </div>
+                                                </div>  
                                             </div> 
-                                            <div class="form-row">
-                                                <div class="col-6"> 
-                                                    <div class="form-group">
-                                                        <select class="form-control bg-sweetlight rounded-0 border-left-0" style="height: 50px;" id="city">
-                                                            <option>高雄市</option>
-                                                            <option>台北市</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="form-group">
-                                                        <select class="form-control bg-sweetlight rounded-0 border-left-0" style="height: 50px;" id="township">
-                                                            <option>新興區</option>
-                                                            <option>鳳山區</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-row justify-content-center">
-                                                <div class="col-12">
-                                                    <input type="text" class="form-control bg-sweetlight py-4 rounded-0 border-left-0" placeholder="幸福路 520 號">
-                                                </div>
-                                            </div>
-                                        </div>        
+                                            <button type="submit" class="submit-btn btn btn-warninglight btn-block text-sweet text-center py-3 rounded-0">確認結帳</button> 
+                                        </form>
                                     </div>
-                                    <div class="form-row justify-content-center">
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label class="mb-3 font-big" for="uni-number">統一編號（選填）</label>
-                                                <input class="form-control bg-sweetlight py-4 rounded-0 border-left-0" type="text" id="uni-number" placeholder="12345678">
-                                            </div>
-                                        </div>  
-                                    </div> 
                                 </div>
-                            </div>
-                                            
-                        </form>
+                                               
+                            </div>    
+                        </div>
+                        
                     </div>
-                    <div class="card-footer p-0">
-                        <a href="checkout-success.html".html" class="submit-btn btn btn-warning btn-block text-sweet text-center py-3 rounded-0">確認結帳</a>
-                    </div>
+                        
                 </div>
             </div>
             <div class="col-md-4 d-none d-lg-block">
@@ -258,13 +290,6 @@
   integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
   crossorigin="anonymous"></script>
 
-  <script>
-    $(".receipt a").on('click',function(e){
-        e.preventDefault();
-        $(this).siblings().removeClass('active');
-        $(this).tab('show');
-        $(this).toggleClass('active');
-    })
-  </script>
+  <script src="js/all.js"></script>
 </body>
 </html>

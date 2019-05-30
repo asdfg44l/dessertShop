@@ -1,0 +1,58 @@
+/*checkout-1*/
+.current-process{
+    width: 150px;
+    position: relative;
+    .circle{
+        position: relative;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        z-index: 4;
+        &::before{
+          content: '';
+          position: absolute;
+          top: 2px;
+          bottom: 2px;
+          left: 2px;
+          right: 2px;
+          border-radius: 50%;
+        }
+    }
+    .circle-now{
+        &::before{
+            background-color: #fff;
+        }
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        left: 15px;
+        right: 15px;
+        height: 0.5px;
+        background-color: #fff;
+        top: 50%;
+        z-index: 2;
+    }
+}
+
+/*checkout-3*/
+.receipt{
+    a{
+        color: #fff;
+        &:hover{
+            color: #fff;
+            background-color: grey;
+        }
+    }
+    .active{
+        color: #3F5D45;
+        background: $sweetlight;
+    }
+}
+#pay-success{
+    width: 200px;
+    &::after{
+        background-color: #3F5D45;
+    }
+}
