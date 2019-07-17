@@ -11228,7 +11228,7 @@ a.text-warninglight:hover, a.text-warninglight:focus {
 /*layout*/
 body {
   height: 100vh;
-  font-family: '微軟正黑體','Gill Sans', 'Gill Sans MT';
+  font-family: '微軟正黑體','Gill Sans', 'Gill Sans MT', Arial, Helvetica, sans-serif;
 }
 
 .font-md-size {

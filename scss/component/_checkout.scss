@@ -1,3 +1,4 @@
+$checkout-theme: #fff;
 /*checkout-1*/
 .current-process{
     width: 150px;
@@ -6,7 +7,7 @@
         position: relative;
         width: 15px;
         height: 15px;
-        border: 1px solid #fff;
+        border: 1px solid $checkout-theme;
         border-radius: 50%;
         z-index: 4;
         &::before{
@@ -21,7 +22,7 @@
     }
     .circle-now{
         &::before{
-            background-color: #fff;
+            background-color: $checkout-theme;
         }
     }
     &::after{
@@ -30,7 +31,7 @@
         left: 15px;
         right: 15px;
         height: 0.5px;
-        background-color: #fff;
+        background-color: $checkout-theme;
         top: 50%;
         z-index: 2;
     }
@@ -39,9 +40,9 @@
 /*checkout-3*/
 .receipt{
     a{
-        color: #fff;
+        color: $checkout-theme;
         &:hover{
-            color: #fff;
+            color: $checkout-theme;
             background-color: grey;
         }
     }

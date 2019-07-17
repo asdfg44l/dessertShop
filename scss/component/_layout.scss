@@ -5,7 +5,7 @@ $lightsweet:#8DA291;
 /*layout*/
 body{
     height:100vh;
-    font-family: '微軟正黑體','Gill Sans', 'Gill Sans MT';
+    font-family: '微軟正黑體','Gill Sans', 'Gill Sans MT', Arial, Helvetica, sans-serif;
 }
 .font-md-size{
     font-size: 16px;
@@ -51,7 +51,7 @@ body{
 }
 .replace-slogan{
     font-size: 32px;
-    color: #3F5D45;
+    color: $sweet;
     font-weight: bold;
 }
 
@@ -93,7 +93,7 @@ body{
             height: 300px;
         }
         .text-md-sweet{
-            color: #3F5D45 !important;
+            color: $sweet !important;
         }
         .slogan{
             top:-40px;
