@@ -61,22 +61,22 @@
         </div>
     </div>
     
-    <div class="product-table container my-5">
+    <div class="product-table container my-5" id="product">
         <div class="row">
             <div class="col-md-4 mb-3 mb-md-0">
                 <div class="table-control list-group text-center text-sweet font-weight-bold" id="myList" role="tablist">
                     <p class="list-group-item rounded-0 bg-sweet text-white">
                       甜點類別
                     </p>
-                    <a href="#all" data-toggle="list" role="tab" class="list-group-item list-group-item-action bg-sweetlight">所有甜點 (48)</a>
-                    <a href="#special" data-toggle="list" role="tab" class="list-group-item list-group-item-action">本日精選 (10)</a>
-                    <a href="#recommend" data-toggle="list" role="tab" class="list-group-item list-group-item-action">人氣推薦 (26)</a>
-                    <a href="#" class="list-group-item list-group-item-action rounded-0 disabled" tabindex="-1" aria-disabled="true">新品上市 (12)</a>
+                    <a href="#all" data-toggle="list" role="tab" class="list-group-item list-group-item-action text-sweet active">所有甜點 (48)</a>
+                    <a href="#special" data-toggle="list" role="tab" class="list-group-item list-group-item-action text-sweet">本日精選 (10)</a>
+                    <a href="#recommend" data-toggle="list" role="tab" class="list-group-item list-group-item-action text-sweet">人氣推薦 (26)</a>
+                    <a href="#newProduct" data-toggle="list" role="tab" class="list-group-item list-group-item-action text-sweet rounded-0">新品上市 (12)</a>
                 </div>
             </div>
             <div class="col-md-8">
                 <div class="tab-content">
-                    <div class="tab-pane active" id="all">
+                    <div class="tab-pane container-fluid" id="all">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="card mb-4 mb-md-3 rounded-0">
@@ -186,7 +186,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="special">
+                    <div class="tab-pane container-fluid" id="special">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="card mb-4 mb-md-3 mb-md-3 rounded-0">
@@ -260,7 +260,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="recommend">
+                    <div class="tab-pane container-fluid" id="recommend">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="card mb-4 mb-md-3 rounded-0">
@@ -282,6 +282,80 @@
                             <div class="col-md-6">
                                 <div class="card mb-4 mb-md-3 rounded-0">
                                     <div class="card-img-top bg-cover card-img rounded-0" style="background-image: url('https://images.unsplash.com/photo-1543287920-26349b5b1376?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">
+                                        <div class="marker p-2 bg-sweet text-white">本日精選</div>
+                                        <div class="heart p-3"><i class="far fa-heart text-sweet" style="font-size: 20px"></i></div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row" style="font-size: 20px">
+                                            <div class="col-6 py-3 text-sweet text-center font-weight-bold border-right">焦糖馬卡龍</div>
+                                            <div class="col-6 py-3 text-sweet text-center font-weight-bold">$450</div>
+                                        </div>
+                                    </div>  
+                                    <div class="card-footer p-0">
+                                        <button type="button" class="btn btn-block text-sweet font-weight-bold border-0 bg-sweetlight py-3" style="font-size: 20px">加入購物車</button>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container-fluid" id="newProduct">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card mb-4 mb-md-3 mb-md-3 rounded-0">
+                                    <div class="card-img-top bg-cover card-img rounded-0" style="background-image: url('https://bit.ly/2QvsT63')">
+                                        <div class="marker p-2 bg-sweet text-white">本日精選</div>
+                                        <div class="heart p-3"><i class="far fa-heart text-sweet" style="font-size: 20px"></i></div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row" style="font-size: 20px">
+                                            <div class="col-6 py-3 text-sweet text-center font-weight-bold border-right">焦糖馬卡龍</div>
+                                            <div class="col-6 py-3 text-sweet text-center font-weight-bold">$450</div>
+                                        </div>
+                                    </div>  
+                                    <div class="card-footer p-0">
+                                        <button type="button" class="btn btn-block text-sweet font-weight-bold border-0 bg-sweetlight py-3" style="font-size: 20px">加入購物車</button>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card mb-4 mb-md-3 mb-md-3 rounded-0">
+                                    <div class="card-img-top bg-cover card-img rounded-0" style="background-image: url('https://bit.ly/2Dwoxd7')">
+                                        <div class="marker p-2 bg-sweet text-white">本日精選</div>
+                                        <div class="heart p-3"><i class="far fa-heart text-sweet" style="font-size: 20px"></i></div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row" style="font-size: 20px">
+                                            <div class="col-6 py-3 text-sweet text-center font-weight-bold border-right">焦糖馬卡龍</div>
+                                            <div class="col-6 py-3 text-sweet text-center font-weight-bold">$450</div>
+                                        </div>
+                                    </div>  
+                                    <div class="card-footer p-0">
+                                        <button type="button" class="btn btn-block text-sweet font-weight-bold border-0 bg-sweetlight py-3" style="font-size: 20px">加入購物車</button>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card mb-4 mb-md-3 mb-md-3 rounded-0">
+                                    <div class="card-img-top bg-cover card-img rounded-0" style="background-image: url('https://images.unsplash.com/photo-1556913396-7a3c459ef68e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1040&q=80')">
+                                        <div class="marker p-2 bg-sweet text-white">本日精選</div>
+                                        <div class="heart p-3"><i class="far fa-heart text-sweet" style="font-size: 20px"></i></div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row" style="font-size: 20px">
+                                            <div class="col-6 py-3 text-sweet text-center font-weight-bold border-right">焦糖馬卡龍</div>
+                                            <div class="col-6 py-3 text-sweet text-center font-weight-bold">$450</div>
+                                        </div>
+                                    </div>  
+                                    <div class="card-footer p-0">
+                                        <button type="button" class="btn btn-block text-sweet font-weight-bold border-0 bg-sweetlight py-3" style="font-size: 20px">加入購物車</button>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card mb-4 mb-md-3 mb-md-3 rounded-0">
+                                    <div class="card-img-top bg-cover card-img rounded-0" style="background-image: url('https://bit.ly/2QbVsVR')">
                                         <div class="marker p-2 bg-sweet text-white">本日精選</div>
                                         <div class="heart p-3"><i class="far fa-heart text-sweet" style="font-size: 20px"></i></div>
                                     </div>
@@ -377,9 +451,11 @@
         </div>
     </footer>
     
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
@@ -388,8 +464,22 @@
     crossorigin="anonymous"></script>
     <script>
         $(function () {
-            $('#myList a:last-child').tab('show')
-        })      
+            $('#myList a.first-child').tab('show')
+        })    
+        // 跳轉頁面後
+        var target = localStorage.getItem("target");
+        if(!target){
+            target = "all";
+        }
+        localStorage.clear();
+        $("a.list-group-item").each(function(){
+            $(this).removeClass("active");
+            if( "#" + target == $(this)[0].attributes.href.value){
+                $(this).addClass("active");
+                $(`#${target}`).addClass("active");
+            }
+        });
     </script>
+    <script src="./js/all.js"></script>
 </body>
 </html>

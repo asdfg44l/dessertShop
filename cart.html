@@ -59,31 +59,32 @@
     </nav>
   </div>
   
-  <div class="cart-table container my-3">
+  <h3 class="h3 d-md-none py-3 mb-4 font-weight-bold text-sweet text-center bg-sweetlight border-bottom-0" colspan="5">您的購物車</h3>
+  <div class="cart-table container my-md-3">
       <div class="row">
-          <div class="col-md-8 mb-3 mb-md-0">
+          <div class="col-md-8">
+            <h3 class="h3 d-none d-md-block py-3 mb-4 font-weight-bold text-sweet text-center bg-sweetlight border-bottom-0" colspan="5">您的購物車</h3>
             <div class="cart-list container-fluid py-3">
-                <h3 class="h3 py-3 mb-4 font-weight-bold text-sweet text-center bg-sweetlight border-bottom-0" colspan="5">您的購物車</h3>
-                <div class="d-flex justify-content-around flex-column flex-md-row">
-                    <div class="d-flex flex-fill py-2">
-                        <div class="cart-pic bg-cover" style="background-image: url('https://bit.ly/2R5tqwD');"></div>
-                        <div class="cart-content flex-fill d-flex flex-column flex-md-row align-items-start justify-content-around align-items-md-center text-sweet ml-3 ml-md-0">
-                            <div class="cart-title ml-0 ml-md-3 font-big">
-                              <p class="font-big">焦糖馬卡龍</p>
-                              <p>NT$ 450</p>
-                            </div>
-                            <div class="number-control btn-group btn-group-lg" role="group" aria-label="Basic example">
-                              <button type="button" class="btn btn-outline-sweetlight text-sweet rounded-0">-</button>
-                              <button type="button" class="btn btn-outline-sweetlight text-sweet">2</button>
-                              <button type="button" class="btn btn-outline-sweetlight text-sweet rounded-0">+</button>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="total-price d-flex py-2 border-sweetlight align-items-center justify-content-end justify-content-md-around" >
-                      <span class="h4 text-sweet text-center font-weight-bold mb-0">NT$ 900</span>
-                      <i class="far fa-trash-alt d-none d-md-inline"></i>
-                    </div>
-                </div>
+              <div class="d-flex justify-content-around flex-column flex-md-row">
+                  <div class="d-flex flex-fill py-2">
+                      <div class="cart-pic bg-cover" style="background-image: url('https://bit.ly/2R5tqwD');"></div>
+                      <div class="cart-content flex-fill d-flex flex-column flex-md-row align-items-start justify-content-around align-items-md-center text-sweet ml-3 ml-md-0">
+                          <div class="cart-title ml-0 ml-md-3 font-big">
+                            <p class="font-big">焦糖馬卡龍</p>
+                            <p>NT$ 450</p>
+                          </div>
+                          <div class="number-control btn-group btn-group-lg" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-outline-sweetlight text-sweet rounded-0">-</button>
+                            <button type="button" class="btn btn-outline-sweetlight text-sweet">2</button>
+                            <button type="button" class="btn btn-outline-sweetlight text-sweet rounded-0">+</button>
+                          </div>
+                      </div>
+                  </div> 
+                  <div class="total-price d-flex py-2 border-sweetlight align-items-center justify-content-end justify-content-md-around" >
+                    <span class="h4 text-sweet text-center font-weight-bold mb-0">NT$ 900</span>
+                    <i class="far fa-trash-alt d-none d-md-inline"></i>
+                  </div>
+              </div>
             </div>
             <div class="cart-list container-fluid py-3">
                 <div class="d-flex justify-content-around flex-column flex-md-row">
@@ -131,12 +132,12 @@
             </div>        
           </div>
           <div class="col-md-4">
-              <div class="card bg-sweet border-0">
+              <div class="card cartOrder border-0">
                   <div class="card-body">
-                      <table class="table bg-sweet text-white">
-                          <thead class="text-center">
+                      <table class="table orderTable">
+                          <thead class="text-center orderhead">
                               <tr>
-                                  <th class="h4 border-top-0" colspan="2">訂單摘要</th>
+                                  <th class="h4 border-top-0 font-weight-bold" colspan="2">訂單摘要</th>
                               </tr>
                           </thead>
                           <tbody>
@@ -155,14 +156,14 @@
                           </tbody>
                       </table>
                   </div>
-                  <div class="card-footer p-0">
+                  <div class="card-footer d-none d-md-block p-0">
                       <a href="checkout-1.html" class="btn btn-block btn-warninglight py-3 text-sweet font-big font-weight-bold rounded-0">結帳</a>
                   </div>
               </div>
           </div>
       </div>
   </div>
-
+  <a href="checkout-1.html" class="btn btn-block btn-warninglight d-md-none py-3 text-sweet font-big font-weight-bold rounded-0">結帳</a>
   <footer>
       <div class="mailus py-4 bg-sweet">
         <div class="container">

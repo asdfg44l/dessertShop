@@ -58,7 +58,8 @@
         </nav>
     </div>
      
-    <div class="checkout container">
+    <div class="checkout">
+      <div class="container d-none d-md-block">
         <div class="row justify-content-center my-3">
             <div class="col-lg-5">
                 <div class="card bg-sweet text-white border-0 rounded-0" style="height: 100%">
@@ -78,7 +79,7 @@
                                     </div>
                                 </div>
                             </h3>
-                            <form action="checkout-3-1.html" class="needs-validation" novalidate>
+                            <form action="checkout-2.html" class="needs-validation" novalidate>
                                 <div class="form-row justify-content-center">
                                     <div class="col-5 mb-3">
                                         <label class="mb-3 font-big" for="last-name">姓氏</label>
@@ -192,6 +193,77 @@
                 </div>
             </div>
         </div>
+      </div>
+      <div class="d-md-none">
+        <div class="card bg-sweet text-white border-0 rounded-0" style="height: 100%">
+            <div class="card-body p-0">
+                <div class="d-flex flex-column justify-content-between" style="height: 100%">
+                    <h3 class="login-title py-3 text-center mt-3">
+                        <div class="form-row justify-content-center align-items-center">
+                            <div class="col-5">
+                                <div class="h3 text-left">運送</div>
+                            </div>
+                            <div class="col-5">
+                                <div class="current-process d-flex ml-auto justify-content-between align-items-center">
+                                    <div class="circle circle-now bg-sweet"></div>
+                                    <div class="circle bg-sweet"></div>
+                                    <div class="circle bg-sweet"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </h3>
+                    <form action="checkout-3-1.html" class="needs-validation" novalidate>
+                        <div class="form-row justify-content-center">
+                            <div class="col-5 mb-3">
+                                <label class="mb-3 font-big" for="last-name">姓氏</label>
+                                <input id="last-name" type="text" class="form-control bg-sweetlight py-4 rounded-0 border-left-0" placeholder="王" required>
+                            </div>
+                            <div class="col-5 mb-3">
+                                <label class="mb-3 font-big" for="validationCustom02">名字</label>
+                                <input type="text" class="form-control bg-sweetlight py-4 rounded-0 border-left-0" placeholder="小明" required>   
+                            </div>
+                        </div>
+                        <div class="form-row justify-content-center">
+                            <div class="col-10 mb-3">
+                                <label class="mb-3 font-big" for="phoneNum">電話</label>
+                                <input id="phoneNum" type="tel" class="form-control bg-sweetlight py-4 rounded-0 border-left-0" placeholder="0912-345-678" required>
+                            </div>
+                        </div>
+                        <div class="form-row justify-content-center mb-5">
+                            <div class="col-10">
+                                <label class="d-block mb-3 font-big" for="address">地址</label>
+                                <div class="form-row">
+                                    <div class="col-6"> 
+                                        <div class="form-group">
+                                            <select class="form-control bg-sweetlight rounded-0 border-left-0" style="height: 50px;" id="city" required>
+                                                <option>高雄市</option>
+                                                <option>台北市</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <select class="form-control bg-sweetlight rounded-0 border-left-0" style="height: 50px;" id="township" required>
+                                                <option>新興區</option>
+                                                <option>鳳山區</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row justify-content-center">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control bg-sweetlight py-4 rounded-0 border-left-0" placeholder="幸福路 520 號" required>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <button type="submit" class="submit-btn btn btn-warninglight btn-block text-sweet text-center py-3 rounded-0">下一步</button>      
+                    </form> 
+                </div>   
+            </div>    
+        </div>
+      </div>  
     </div>
 
     <footer>

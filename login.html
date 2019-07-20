@@ -58,7 +58,8 @@
       </nav>
     </div>
 
-    <div class="login container my-5">
+    <div class="login">
+      <div class="container-fluid my-md-5 d-none d-md-block">
         <div class="row justify-content-center">
             <div class="col-md-4 pr-3 pr-md-0">
                 <div class="card bg-sweet text-white border-0 rounded-0">
@@ -66,11 +67,11 @@
                         <h3 class="login-title py-3 text-center">會員登入</h3>
                     </div>
                     <div class="py-4 bg-sweetlight text-center d-block d-md-none">
-                       <div class="social-media login-option d-flex justify-content-center">
+                        <div class="social-media login-option d-flex justify-content-center">
                             <div class="p-2 border-right bg-white"><div class="trademark px-5 py-3 mx-2" id="fb"></div></div>
                             <div class="p-2 border-right bg-white d-flex align-items-center"><div class="trademark mx-2 " id="google"></div></div>
                             <div class="p-2 bg-white d-flex align-items-center"><div class="trademark mx-2 " id="yahoo"></div></div>     
-                       </div>
+                        </div>
                     </div>
                     <div class="card-body p-0">
                         <form action="checkout-1.html" class="needs-validation" novalidate id="login">
@@ -102,18 +103,60 @@
                 </div>
             </div>
             <div class="col-md-5 pl-0 py-3 d-none d-md-block">
-               <div class="card bg-sweetlight border-0">
-                   <div class="card-body">
+                <div class="card bg-sweetlight border-0">
+                    <div class="card-body">
                         <div class="title-decoration h4 text-center text-sweet">連結社群帳號</div>
                         <ul class="list-group social-media">
-                            <li class="list-group-item py-3 my-3 rounded-0"><div class="trademark" id="fb"></div></li>
-                            <li class="list-group-item py-3 my-3 rounded-0"><div class="trademark" id='google'></div></li>
-                            <li class="list-group-item py-3 my-3 rounded-0"><div class="trademark" id="yahoo"></div></li>
+                            <li class="list-group-item py-3 my-3 rounded-0"><div class="facebook trademark"></div></li>
+                            <li class="list-group-item py-3 my-3 rounded-0"><div class="google trademark"></div></li>
+                            <li class="list-group-item py-3 my-3 rounded-0"><div class="yahoo trademark"></div></li>
                         </ul>
-                   </div>
-               </div>
+                    </div>
+                </div>
             </div>
         </div>
+      </div>
+      <div class="d-md-none">
+          <div class="card bg-sweet text-white border-0 rounded-0">
+              <div class="card-header border-bottom-0">
+                  <h3 class="login-title py-3 text-center">會員登入</h3>
+              </div>
+              <div class="py-4 bg-sweetlight text-center d-block d-md-none">
+                  <div class="social-media login-option d-flex justify-content-center">
+                      <div class="p-2 border-right bg-white"><div class="facebook trademark px-5 py-3 mx-2"></div></div>
+                      <div class="p-2 border-right bg-white d-flex align-items-center"><div class="google trademark mx-2 "></div></div>
+                      <div class="p-2 bg-white d-flex align-items-center"><div class="yahoo trademark mx-2 "></div></div>     
+                  </div>
+              </div>
+              <div class="card-body p-0">
+                  <form action="checkout-1.html" class="needs-validation" novalidate id="login">
+                      <div class="p-3">
+                        <div class="form-group my-4">    
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-sweetlight border-right-0"><i class="fas fa-user"></i></span>
+                                </div>
+                                <input type="email" class="form-control bg-sweetlight py-4 rounded-0 border-left-0" placeholder="電子信箱" required>
+                            </div>
+                        </div>
+                        <div class="form-group my-4">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-sweetlight border-right-0"><i class="fas fa-key"></i></span>
+                                </div>
+                                <input type="password" class="form-control bg-sweetlight py-4 rounded-0 border-left-0" placeholder="請輸入使用者密碼" required>
+                            </div>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input">
+                            <label class="form-check-label" for="exampleCheck1">記住我</label>
+                        </div>
+                      </div>  
+                      <button id="send" type="submit" class="submit-btn btn btn-warninglight btn-block text-sweet text-center py-3 rounded-0">登入帳號</button>
+                  </form>
+              </div>
+          </div>
+      </div>  
     </div>
     
 

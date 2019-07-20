@@ -3,16 +3,16 @@
 /*layout*/
 body{
     height:100vh;
-    font-family: '微軟正黑體','Gill Sans', 'Gill Sans MT', Arial, Helvetica, sans-serif;
+    font-family: 'Microsoft JhengHei','Gill Sans', 'Gill Sans MT', Arial, Helvetica, sans-serif;
 }
 .font-md-size{
     font-size: 16px;
 }
 .font-small{
-    font-size: 0.75rem;
+    font-size: $font-size-sm;
 }
 .font-big{
-    font-size: 1.25rem;
+    font-size: $font-size-lg;
 }
 .logo{
     display: block;

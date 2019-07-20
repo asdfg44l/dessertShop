@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/all.css">
 </head>
 <body>
-    <div class="container header">
+    <div class="successHeader">
       <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
         <h1 class="navbar-brand m-0" href="#"><a class="text-hide logo" href="#">Sweetaste</a></h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,23 +56,24 @@
           </ul>
         </div>
       </nav>
-      <div class="banner jumbotron jumbotron-fluid bg-cover d-flex" style="height: 450px; background-image:url('https://bit.ly/2P7GhNd')">
+      <div class="banner jumbotron jumbotron-fluid bg-cover d-flex mb-0 mb-md-3" style="height: 450px; background-image:url('https://bit.ly/2P7GhNd')">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center">
-                    <div class="current-process d-flex mx-auto py-5 justify-content-between align-items-center text-sweet" id="pay-success">
-                        <div style="z-index: 3;"><i class="fas fa-check-circle d-block" style="font-size: 20px;"></i></div>
+                    <div class="current-process success-process d-flex mx-auto py-5 justify-content-between align-items-center text-sweet" id="pay-success">
                         <div class="bg-sweetlight" style="z-index: 3; border-radius: 50%;"><i class="fas fa-check-circle d-block" style="font-size: 20px;"></i></div>
-                        <div style="z-index: 3;"><i class="fas fa-check-circle d-block" style="font-size: 20px;"></i></div>
+                        <div class="bg-sweetlight" style="z-index: 3; border-radius: 50%;"><i class="fas fa-check-circle d-block" style="font-size: 20px;"></i></div>
+                        <div class="bg-sweetlight" style="z-index: 3; border-radius: 50%;"><i class="fas fa-check-circle d-block" style="font-size: 20px;"></i></div>
                     </div>
                     <div class="h3 bg-cover mx-auto py-3" style="width: 200px;height: 48px; background-image: url('images/lg-付款成功.svg'); background-repeat: no-repeat;"></div>
-                    <a href="product.html" class="btn btn-warninglight btn-block text-sweet font-big font-weight-bold py-3 mx-auto mt-5" style="width: 350px">繼續逛逛</a>
+                    <a href="product.html" class="d-none d-md-block btn btn-warninglight btn-block text-sweet font-big font-weight-bold py-3 mx-auto mt-5" style="width: 350px">繼續逛逛</a>
                 </div>
             </div>
         </div>
       </div>
+      <a href="product.html" class="d-md-none btn btn-warninglight btn-block text-sweet font-big font-weight-bold py-3">繼續逛逛</a>
     </div>
-
+    
     <footer>
       <div class="mailus py-4 bg-sweet">
         <div class="container">

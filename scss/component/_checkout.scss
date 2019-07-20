@@ -30,10 +30,15 @@ $checkout-theme: #fff;
         position: absolute;
         left: 15px;
         right: 15px;
-        height: 0.5px;
+        height: 1px;
         background-color: $checkout-theme;
         top: 50%;
         z-index: 2;
+    }
+    &.success-process{
+        &::after{
+            background-color: $sweet;
+        }
     }
 }
 
@@ -51,9 +56,13 @@ $checkout-theme: #fff;
         background: $sweetlight;
     }
 }
-#pay-success{
-    width: 200px;
-    &::after{
-        background-color: #3F5D45;
+/*checkout-success*/
+@media(min-width:1120px){
+    .successHeader{
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }

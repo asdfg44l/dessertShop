@@ -6,8 +6,7 @@
     <link href="images/favicon.ico" rel="shortcut icon">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/all.css">
-    
+    <link rel="stylesheet" href="css/all.css">   
   </head>  
   <body>
     <div class="container header">
@@ -57,24 +56,22 @@
           </ul>
         </div>
       </nav>
-      <div class="banner jumbotron jumbotron-fluid mb-0 bg-cover" style="background-image:url('https://bit.ly/2OhbMHr');">
-        <div class="container"></div>
-      </div>
+      <div class="banner jumbotron jumbotron-fluid mb-0 bg-cover" style="background-image:url('https://bit.ly/2OhbMHr');"></div>
       <div class="main-link px-0 px-md-5">
         <div class="d-flex justify-content-center px-0">  
-          <a href="#" class='frosted-wrap '>         
-              <div class="frosted-img bg-cover"></div>
-              <div class="surface-cover d-flex justify-content-center align-items-center">
-                <span class="text-sweet font-weight-bold">本日精選</span>
-              </div>
+          <a href="#" class='frosted-wrap' data-name="special">         
+            <div class="frosted-img bg-cover"></div>
+            <div class="surface-cover d-flex justify-content-center align-items-center">
+              <span class="text-sweet font-weight-bold">本日精選</span>
+            </div>
           </a>
-          <a href="#" class='frosted-wrap'>
+          <a href="#" class='frosted-wrap' data-name="recommend">
             <div class="frosted-img bg-cover" style="background-image: url('https://bit.ly/2Dwoxd7')"></div>
             <div class="surface-cover d-flex justify-content-center align-items-center bg-sweet" style=" opacity: 0.7;">
               <span class="text-white">人氣推薦</span>
             </div>
           </a>
-          <a href="#" class='frosted-wrap'>
+          <a href="#" class='frosted-wrap' data-name="newProduct">
             <div class="frosted-img bg-cover" style="background-image: url('https://bit.ly/2QvsT63')"></div>
             <div class="surface-cover d-flex justify-content-center align-items-center bg-sweet" style=" opacity: 0.7;">
               <span class="text-white">新品上市</span>
@@ -89,45 +86,38 @@
     <div class="main-content">
         <section class="content container-fluid mb-md-5 py-4">
             <div class="row">
-              <div class="side-picture col-md-5 ml-md-5">
-                <div class="bg-cover w-100 h-100" style="background-image: url(https://bit.ly/2xPn7Eq)"></div>
+              <div class="side-picture col-md-5 ml-md-5 bg-cover" style="background-image: url(https://bit.ly/2xPn7Eq)">
               </div>
-            </div>    
-            <div class="container-fluid py-3 bg-sweetlight" >
-              <div class="row justify-content-end" >
-                <div class="poems col-md-6 py-3 d-md-flex justify-content-center justify-content-sm-start" style="position: relative">
-                  <p class="poem mx-md-5">
-                    是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
-                  </p>
-                  <p class="poem ml-md-4">
-                    青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
-                  </p>
-                  <div class="slogan d-none d-sm-block"></div> 
-                </div>       
-              </div>
+            </div>  
+            <div class="row justify-content-end py-3 bg-sweetlight" >
+              <div class="poems col-md-6 py-3 d-md-flex justify-content-center justify-content-sm-start" style="position: relative">
+                <p class="poem mx-md-5">
+                  是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
+                </p>
+                <p class="poem ml-md-4">
+                  青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
+                </p>
+                <div class="slogan d-none d-sm-block"></div> 
+              </div>       
             </div>
         </section>
           
         <div class="h3 my-3 replace-slogan d-sm-none text-center line-height-sm" >為什麼<span class="font-weight-normal"> ——— </span><br>一定要吃甜點</div>
         <section class="content container-fluid py-4">
             <div class="row">
-              <div class="side-picture side-reverse bg-cover col-12 col-md-5 mr-md-5">
-                <div class="bg-cover w-100 h-100" style="background-image: url(https://bit.ly/2zzAQS4)"></div>
+              <div class="side-picture side-reverse bg-cover col-md-5 mr-md-5" style="background-image: url(https://bit.ly/2zzAQS4)">
               </div>
             </div>    
-            <div class="container-fluid py-3 bg-sweetlight" >
-              <div class="row justify-content-start" >
-                  <div class="bg-sweetlight col-md-6 py-3 d-md-flex justify-content-center justify-content-sm-start" style="position: relative">
-                    <p class="poem mx-md-5">
-                      是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
-                    </p>
-                    <p class="poem ml-md-4">
-                      青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
-                    </p>
-                    <div class="slogan slogan-reverse d-none d-sm-block"></div> 
-                  </div>      
-                            
-              </div>
+            <div class="row justify-content-start py-3 bg-sweetlight" >
+                <div class="bg-sweetlight col-md-6 py-3 d-md-flex justify-content-center justify-content-sm-start" style="position: relative">
+                  <p class="poem mx-md-5">
+                    是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
+                  </p>
+                  <p class="poem ml-md-4">
+                    青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
+                  </p>
+                  <div class="slogan slogan-reverse d-none d-sm-block"></div> 
+                </div>                    
             </div>
         </section>
     
@@ -140,8 +130,8 @@
           <div class="container">
             <div class="row">
               <div class="col-md-4 d-none d-md-block">
-                <div class="card mb-3">
-                  <div class="card-img-top bg-cover card-img" style="background-image: url('https://bit.ly/2zL5jN7')">
+                <div class="card mb-3 rounded-0">
+                  <div class="card-img-top bg-cover card-img rounded-0" style="background-image: url('https://bit.ly/2zL5jN7')">
                       <div class="marker p-2 bg-sweet text-white">本日精選</div>
                       <div class="heart p-3"><i class="far fa-heart text-sweet" style="font-size: 20px"></i></div>
                   </div>
@@ -151,13 +141,13 @@
                         <div class="col-6 py-3 text-sweet text-center font-weight-bold">$450</div>
                       </div>
                   </div>  
-                  <div class="card-footer p-0">
+                  <div class="card-footer p-0 rounded-0">
                     <button type="button" class="btn btn-block text-sweet font-weight-bold border-0 bg-sweetlight py-3" style="font-size: 20px">加入購物車</div>
                   </div> 
               </div>
               <div class="col-md-4 mt-3 mt-md-0 d-none d-md-block">
-                <div class="card mb-3">
-                  <div class="card-img-top bg-cover card-img" style="background-image: url('https://bit.ly/2zBDAxX')">
+                <div class="card mb-3 rounded-0">
+                  <div class="card-img-top bg-cover card-img rounded-0" style="background-image: url('https://bit.ly/2zBDAxX')">
                       <div class="marker p-2 bg-sweet text-white">本日精選</div>
                       <div class="heart p-3"><i class="far fa-heart text-sweet" style="font-size: 20px"></i></div>
                   </div>
@@ -167,24 +157,24 @@
                         <div class="col-6 py-3 text-sweet text-center font-weight-bold">$450</div>
                       </div>
                   </div>  
-                  <div class="card-footer p-0">
+                  <div class="card-footer p-0 rounded-0">
                     <button type="button" class="btn btn-block text-sweet font-weight-bold border-0 bg-sweetlight py-3" style="font-size: 20px">加入購物車
                   </div>
                 </div> 
               </div>
               <div class="col-md-4 mt-3 mt-md-0">
-                <div class="card mb-3">
-                  <div class="card-img-top bg-cover card-img" style="background-image: url('https://bit.ly/2QbVsVR')">
+                <div class="card mb-3 rounded-0">
+                  <div class="card-img-top bg-cover card-img rounded-0" style="background-image: url('https://bit.ly/2QbVsVR')">
                       <div class="marker p-2 bg-sweet text-white">本日精選</div>
                       <div class="heart p-3"><i class="far fa-heart text-sweet" style="font-size: 20px"></i></div>
                   </div>
-                  <div class="container">
+                  <div class="container rounded-0">
                       <div class="row" style="font-size: 20px">
                         <div class="col-6 py-3 text-sweet text-center font-weight-bold border-right">焦糖馬卡龍</div>
                         <div class="col-6 py-3 text-sweet text-center font-weight-bold">$450</div>
                       </div>
                   </div>  
-                  <div class="card-footer p-0">
+                  <div class="card-footer p-0 rounded-0">
                     <button type="button" class="btn btn-block text-sweet font-weight-bold border-0 bg-sweetlight py-3" style="font-size: 20px">加入購物車
                   </div>
                 </div> 
@@ -247,14 +237,17 @@
       </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous">
+    </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
     integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
+  <script src="./js/all.js"></script>  
   </body>
 </html>

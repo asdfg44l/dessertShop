@@ -55,14 +55,14 @@
         background-repeat: no-repeat;
         background-position: center center;
     }
-    #fb{
+    .facebook{
         padding: 0.65rem 0;
         background-image: url('../images/ic-facebook-logotype.svg');
     }
-    #google{
+    .google{
         background-image: url('../images/ic-google.svg');
     }
-    #yahoo{
+    .yahoo{
         background-image: url('../images/ic-yahoo.svg');
     }
 }
@@ -107,5 +107,28 @@
         }
     }
 
+}
+
+.cartOrder{
+    background-color: unset;
+    .orderTable{
+        background-color: unset;
+        color: $sweet;
+        .orderhead{
+            background-color: $sweetlight;
+        }
+    }
+}
+@media(min-width: 768px){
+    .cartOrder{
+        background-color: $sweet;
+        .orderTable{
+            background-color: $sweet;
+            color: #fff;
+            .orderhead{
+                background-color: unset;
+            }
+        }
+    }
 }
 
