@@ -11244,10 +11244,10 @@ body {
 
 .logo {
   display: block;
-  width: 220px;
-  height: 40px;
-  background-image: url(../images/logo-all-dark.svg);
-  background-size: cover;
+  width: 150px;
+  height: 30px;
+  background-image: url(../images/logotype-lg-dark.svg);
+  background-repeat: no-repeat;
   background-position: center center;
 }
 
@@ -11305,6 +11305,11 @@ body {
 }
 
 @media (min-width: 768px) {
+  .logo {
+    width: 220px;
+    height: 40px;
+    background-image: url(../images/logo-all-dark.svg);
+  }
   .banner {
     height: 500px;
   }
@@ -11331,22 +11336,13 @@ body {
 
 .content .poem {
   color: #8DA291;
-  line-height: 2.5em;
+  line-height: 2em;
   word-spacing: 1em;
 }
 
-.content .slogan {
-  position: absolute;
-  top: 10px;
-  right: 40px;
-  width: 100px;
-  height: 300px;
-  background: url("../images/lg-whyisdesert.svg") no-repeat;
-}
-
-.content .slogan-reverse {
-  background-image: url("../images/lg-為什麼一定要吃甜點.svg");
-  background-repeat: no-repeat;
+.content .vertical-negative-margin {
+  margin-top: -24px;
+  margin-bottom: -24px;
 }
 
 @media (min-width: 768px) {
@@ -11361,13 +11357,11 @@ body {
     -webkit-writing-mode: vertical-rl;
         -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl;
+    line-height: 2.5em;
     height: 300px;
   }
   .content .text-md-sweet {
     color: #3F5D45 !important;
-  }
-  .content .slogan {
-    top: -40px;
   }
   .content .side-reverse {
     left: unset;
@@ -11439,6 +11433,16 @@ body {
 }
 
 /*login*/
+.no-gutters {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.no-gutters .col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .login-title {
   font-size: 36px;
   font-weight: bold;
@@ -11550,6 +11554,11 @@ body {
   .cartOrder .orderTable .orderhead {
     background-color: unset;
   }
+}
+
+.negative-margin {
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 /*checkout-1*/

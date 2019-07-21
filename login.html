@@ -11,10 +11,35 @@
 <body>
     <div class="container header">
       <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
-        <h1 class="navbar-brand m-0" href="#"><a class="text-hide logo" href="#">Sweetaste</a></h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <h1 class="navbar-brand m-0" href="#"><a class="text-hide logo" href="#">Sweetaste</a></h1>
+        <div class="btn-group flex-column order-md-1">
+            <button class="btn nav-link text-sweet font-weight-bold rounded-0" data-toggle="dropdown"><i class="fas fa-shopping-cart"></i></button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <table class="table" style="min-width: 300px">
+                <tr>
+                  <td><img src="https://bit.ly/2R5tqwD" width="60" height="60"></td>
+                  <td class="align-middle">焦糖馬卡龍</td>
+                  <td class="align-middle">NT$ 900</td>
+                </tr>
+                <tr>
+                  <td><img src="https://bit.ly/2R5tqwD" width="60" height="60"></td>
+                  <td class="align-middle">焦糖馬卡龍</td>
+                  <td class="align-middle">NT$ 900</td>
+                </tr>
+                <tr>
+                  <td><img src="https://bit.ly/2R5tqwD" width="60" height="60"></td>
+                  <td class="align-middle">焦糖馬卡龍</td>
+                  <td class="align-middle">NT$ 900</td>
+                </tr>
+              </table>
+              <div class="px-3">
+                <a href="cart.html" class="btn btn-outline-sweet btn-block">結帳去</a>
+              </div> 
+            </div>
+        </div> 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-4">
@@ -26,137 +51,74 @@
             <li class="nav-item mx-4">
               <a class="nav-link text-sweet font-weight-bold" href="login.html">登入</a>
             </li>
-            <li class="nav-item ml-4">
-              <div class="btn-group flex-column">
-                <button class="btn nav-link text-sweet font-weight-bold rounded-0" data-toggle="dropdown"><i class="fas fa-shopping-cart"></i></button>
-                <div class="dropdown-menu dropdown-menu-right">
-                  <table class="table" style="min-width: 300px">
-                    <tr>
-                      <td><img src="https://bit.ly/2R5tqwD" width="60" height="60"></td>
-                      <td class="align-middle">焦糖馬卡龍</td>
-                      <td class="align-middle">NT$ 900</td>
-                    </tr>
-                    <tr>
-                      <td><img src="https://bit.ly/2R5tqwD" width="60" height="60"></td>
-                      <td class="align-middle">焦糖馬卡龍</td>
-                      <td class="align-middle">NT$ 900</td>
-                    </tr>
-                    <tr>
-                      <td><img src="https://bit.ly/2R5tqwD" width="60" height="60"></td>
-                      <td class="align-middle">焦糖馬卡龍</td>
-                      <td class="align-middle">NT$ 900</td>
-                    </tr>
-                  </table>
-                  <div class="px-3">
-                    <a href="cart.html" class="btn btn-outline-sweet btn-block">結帳去</a>
-                  </div> 
-                </div>
-              </div>  
-            </li>
           </ul>
         </div>
+         
       </nav>
     </div>
 
     <div class="login">
-      <div class="container-fluid my-md-5 d-none d-md-block">
-        <div class="row justify-content-center">
-            <div class="col-md-4 pr-3 pr-md-0">
-                <div class="card bg-sweet text-white border-0 rounded-0">
-                    <div class="card-header border-bottom-0">
-                        <h3 class="login-title py-3 text-center">會員登入</h3>
-                    </div>
-                    <div class="py-4 bg-sweetlight text-center d-block d-md-none">
-                        <div class="social-media login-option d-flex justify-content-center">
-                            <div class="p-2 border-right bg-white"><div class="trademark px-5 py-3 mx-2" id="fb"></div></div>
-                            <div class="p-2 border-right bg-white d-flex align-items-center"><div class="trademark mx-2 " id="google"></div></div>
-                            <div class="p-2 bg-white d-flex align-items-center"><div class="trademark mx-2 " id="yahoo"></div></div>     
-                        </div>
-                    </div>
-                    <div class="card-body p-0">
-                        <form action="checkout-1.html" class="needs-validation" novalidate id="login">
-                            <div class="p-3">
-                              <div class="form-group my-4">    
-                                  <div class="input-group">
-                                      <div class="input-group-prepend">
-                                          <span class="input-group-text bg-sweetlight border-right-0"><i class="fas fa-user"></i></span>
-                                      </div>
-                                      <input type="email" class="form-control bg-sweetlight py-4 rounded-0 border-left-0" placeholder="電子信箱" required>
-                                  </div>
+      <div class="container-fluid px-0 px-md-3 my-md-5">
+        <div class="row no-gutters justify-content-center">
+            <div class="col-md-10 col">
+              <div class="row no-gutters flex-md-row-reverse">
+                  <div class="col-md-6 col py-md-3 d-none d-md-block">
+                      <div class="card bg-sweetlight rounded-0">
+                          <div class="card-body">
+                              <div class="title-decoration h4 text-center text-sweet">連結社群帳號</div>
+                              <ul class="list-group social-media mb-3">
+                                  <li class="list-group-item py-3 my-3 rounded-0"><div class="facebook trademark"></div></li>
+                                  <li class="list-group-item py-3 my-3 rounded-0"><div class="google trademark"></div></li>
+                                  <li class="list-group-item py-3 my-3 rounded-0"><div class="yahoo trademark"></div></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col">
+                      <div class="card bg-sweet text-white border-0 rounded-0">
+                          <div class="card-header border-bottom-0">
+                              <h3 class="login-title py-3 text-center">會員登入</h3>
+                          </div>
+                          <div class="py-4 bg-sweetlight text-center d-block d-md-none">
+                              <div class="social-media login-option d-flex justify-content-center">
+                                  <div class="p-2 border-right bg-white"><div class="facebook trademark px-5 py-3 mx-2"></div></div>
+                                  <div class="p-2 border-right bg-white d-flex align-items-center"><div class="google trademark mx-2 "></div></div>
+                                  <div class="p-2 bg-white d-flex align-items-center"><div class="yahoo trademark mx-2 "></div></div>     
                               </div>
-                              <div class="form-group my-4">
-                                  <div class="input-group mb-3">
-                                      <div class="input-group-prepend">
-                                          <span class="input-group-text bg-sweetlight border-right-0"><i class="fas fa-key"></i></span>
-                                      </div>
-                                      <input type="password" class="form-control bg-sweetlight py-4 rounded-0 border-left-0" placeholder="請輸入使用者密碼" required>
-                                  </div>
-                              </div>
-                              <div class="form-group form-check">
-                                  <input type="checkbox" class="form-check-input">
-                                  <label class="form-check-label" for="exampleCheck1">記住我</label>
-                              </div>
-                            </div>  
-                            <button id="send" type="submit" class="submit-btn btn btn-warninglight btn-block text-sweet text-center py-3 rounded-0">登入帳號</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5 pl-0 py-3 d-none d-md-block">
-                <div class="card bg-sweetlight border-0">
-                    <div class="card-body">
-                        <div class="title-decoration h4 text-center text-sweet">連結社群帳號</div>
-                        <ul class="list-group social-media">
-                            <li class="list-group-item py-3 my-3 rounded-0"><div class="facebook trademark"></div></li>
-                            <li class="list-group-item py-3 my-3 rounded-0"><div class="google trademark"></div></li>
-                            <li class="list-group-item py-3 my-3 rounded-0"><div class="yahoo trademark"></div></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                          </div>
+                          <div class="card-body p-0">
+                              <form action="checkout-1.html" class="needs-validation" novalidate id="login">
+                                  <div class="p-4">
+                                    <div class="form-group mb-4">    
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text bg-sweetlight border-right-0 rounded-0"><i class="fas fa-user"></i></span>
+                                            </div>
+                                            <input type="email" class="form-control bg-sweetlight py-4 rounded-0 border-left-0" placeholder="電子信箱" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text bg-sweetlight border-right-0 rounded-0"><i class="fas fa-key"></i></span>
+                                            </div>
+                                            <input type="password" class="form-control bg-sweetlight py-4 rounded-0 border-left-0" placeholder="請輸入使用者密碼" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label" for="exampleCheck1">記住我</label>
+                                    </div>
+                                  </div>  
+                                  <button id="send" type="submit" class="submit-btn btn btn-warninglight btn-block text-sweet text-center py-3 rounded-0">登入帳號</button>
+                              </form>
+                          </div>
+                      </div>
+                  </div>  
+              </div>
+            </div>  
         </div>
       </div>
-      <div class="d-md-none">
-          <div class="card bg-sweet text-white border-0 rounded-0">
-              <div class="card-header border-bottom-0">
-                  <h3 class="login-title py-3 text-center">會員登入</h3>
-              </div>
-              <div class="py-4 bg-sweetlight text-center d-block d-md-none">
-                  <div class="social-media login-option d-flex justify-content-center">
-                      <div class="p-2 border-right bg-white"><div class="facebook trademark px-5 py-3 mx-2"></div></div>
-                      <div class="p-2 border-right bg-white d-flex align-items-center"><div class="google trademark mx-2 "></div></div>
-                      <div class="p-2 bg-white d-flex align-items-center"><div class="yahoo trademark mx-2 "></div></div>     
-                  </div>
-              </div>
-              <div class="card-body p-0">
-                  <form action="checkout-1.html" class="needs-validation" novalidate id="login">
-                      <div class="p-3">
-                        <div class="form-group my-4">    
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text bg-sweetlight border-right-0"><i class="fas fa-user"></i></span>
-                                </div>
-                                <input type="email" class="form-control bg-sweetlight py-4 rounded-0 border-left-0" placeholder="電子信箱" required>
-                            </div>
-                        </div>
-                        <div class="form-group my-4">
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text bg-sweetlight border-right-0"><i class="fas fa-key"></i></span>
-                                </div>
-                                <input type="password" class="form-control bg-sweetlight py-4 rounded-0 border-left-0" placeholder="請輸入使用者密碼" required>
-                            </div>
-                        </div>
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input">
-                            <label class="form-check-label" for="exampleCheck1">記住我</label>
-                        </div>
-                      </div>  
-                      <button id="send" type="submit" class="submit-btn btn btn-warninglight btn-block text-sweet text-center py-3 rounded-0">登入帳號</button>
-                  </form>
-              </div>
-          </div>
-      </div>  
     </div>
     
 

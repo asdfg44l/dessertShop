@@ -25,6 +25,14 @@
 }
 
 /*login*/
+.no-gutters{
+    margin-left: 0;
+    margin-right: 0;
+    .col{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 .login-title{
     font-size: 36px;
     font-weight: bold;

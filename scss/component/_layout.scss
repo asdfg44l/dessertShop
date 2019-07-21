@@ -15,10 +15,10 @@ body{
 }
 .logo{
     display: block;
-    width: 220px;
-    height: 40px;
-    background-image: url(../images/logo-all-dark.svg);
-    background-size: cover;
+    width: 150px;
+    height: 30px;
+    background-image: url(../images/logotype-lg-dark.svg);
+    background-repeat: no-repeat;
     background-position: center center;
 }
 .bg-cover{
@@ -38,6 +38,11 @@ body{
     }
 }
 @media(min-width:768px){
+    .logo{
+        width: 220px;
+        height: 40px;
+        background-image: url(../images/logo-all-dark.svg);
+    }
     .banner{
         height: 500px;
     }
@@ -60,20 +65,12 @@ body{
     }
     .poem{
         color:$lightsweet;
-        line-height: 2.5em;
+        line-height: 2em;
         word-spacing: 1em;
     }
-    .slogan{
-        position: absolute;
-        top: 10px;
-        right:40px;
-        width: 100px;
-        height: 300px;
-        background: url('../images/lg-whyisdesert.svg') no-repeat;
-    }    
-    .slogan-reverse{
-        background-image: url('../images/lg-為什麼一定要吃甜點.svg');
-        background-repeat: no-repeat;
+    .vertical-negative-margin{
+        margin-top: -24px;
+        margin-bottom:  -24px;
     }
 }
 @media(min-width:768px){
@@ -87,13 +84,11 @@ body{
         } 
         .poem{
             writing-mode: vertical-rl;
+            line-height: 2.5em;
             height: 300px;
         }
         .text-md-sweet{
             color: $sweet !important;
-        }
-        .slogan{
-            top:-40px;
         }
         .side-reverse{
             left: unset;
